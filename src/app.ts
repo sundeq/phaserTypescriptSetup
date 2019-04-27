@@ -1,19 +1,19 @@
-class Student {
-    fullName: string;
-    constructor(public firstName, public middleInitial, public lastName) {
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
+import 'phaser';
+
+const config: GameConfig = {
+    title: 'MyPhaserGame',
+    width: 640,
+    height:480,
+    parent: 'game',
+    backgroundColor: '#000080'
+};
+
+export class MyPhaserGame extends Phaser.Game {
+    constructor(config: GameConfig) {
+        super(config);
     }
 }
 
-interface Person {
-    firstName: string;
-    lastName: string;
-}
-
-function greeter(person: Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-
-var user = new Student("Jane", "M.", "User");
-
-document.body.innerHTML = greeter(user);
+window.onload = () => {
+    var game = new MyPhaserGame(config);
+};
