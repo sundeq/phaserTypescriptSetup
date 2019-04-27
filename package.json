@@ -1,0 +1,14 @@
+{
+  "name": "typescript_game_sceleton",
+  "version": "0.1.0",
+  "description": "Sceleton for a typescript game setup",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "author": "Martin Sundeqvist",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  }
+}
