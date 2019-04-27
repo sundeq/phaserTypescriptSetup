@@ -1,11 +1,8 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "outDir": "dest"
+      "target": "es5"
     },
     "include": [
-        "src/*"
+      "src/*"
     ]
-}
+  }

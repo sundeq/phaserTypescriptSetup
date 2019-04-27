@@ -4,11 +4,17 @@
   "description": "Sceleton for a typescript game setup",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc"
+    "build": "webpack",
+    "start": "webpack --watch & live-server --port=8085"
   },
   "author": "Martin Sundeqvist",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^3.4.5"
-  }
+    "live-server": "^1.2.1",
+    "ts-loader": "^5.4.4",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "dependencies": {}
 }
